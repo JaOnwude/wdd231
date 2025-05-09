@@ -1,0 +1,59 @@
+@media only screen and (min-width: 786px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .navigation a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .course-country-container {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .course-country-container h2 {
+        grid-column: 1/3;
+    }
+
+    .course-work-container, .country-container {
+        border: 1px solid #000;
+        box-shadow: 0 0 15px;
+        margin: 5px;
+        border-radius: 10px;
+        h3 {
+            margin-top: 0;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+    .course-list-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        li {
+            margin: 5px;
+        }
+    }
+}
