@@ -179,7 +179,6 @@ footer {
 .navigation a:hover {
     background-color: #bbb;
     color: #333;
-    font-weight: 700;
 }
 
 #hamburger {
@@ -192,13 +191,6 @@ footer {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    /* font-size: 2.5rem;
-    border: 0;
-    background: none;
-    color: #eee;
-    position: absolute;
-    top: 2rem;
-    right: 1.5rem; */
 }
 
 #hamburger::before {
