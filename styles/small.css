@@ -214,9 +214,9 @@ footer {
     content: "❌";
 }
 
-.active::before {
+/* .active::before {
     content: "📍";
-}
+} */
 
 /* #menu {
     font-size: 1.5rem;

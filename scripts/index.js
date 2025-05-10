@@ -5,6 +5,11 @@ const navigation = document.querySelector('.navigation');
 const allCourses = document.querySelector(".all-courses");
 const cseCourses = document.querySelector(".cse-courses");
 const wddCourses = document.querySelector(".wdd-courses");
+const homeAnchor = document.querySelector(".home");
+const chamberAnchor = document.querySelector(".chamber");
+const finalAnchor = document.querySelector(".final");
+const gitHubAnchor = document.querySelector(".github");
+const linkedInAnchor = document.querySelector(".linkedin");
 let courseContainer = document.querySelector(".course-list-container");
 let displayTotalCredits = document.querySelector(".total-credits")
 let totalCredit = 0;
@@ -27,6 +32,50 @@ cseCourses.addEventListener("click", () => {
 
 wddCourses.addEventListener("click", () => {
     createCourseCard(courses.filter(course => course.subject == "WDD"))
+})
+
+homeAnchor.textContent = "📍 Home";
+
+homeAnchor.addEventListener("click", () => {
+    chamberAnchor.textContent = "";
+    homeAnchor.textContent = "📍 Home";
+    finalAnchor.textContent = "Final";
+    gitHubAnchor.textContent = "GitHub Profile";
+    linkedInAnchor.textContent = "LinkedIn";
+    chamberAnchor.textContent = "Chamber";
+})
+
+chamberAnchor.addEventListener("click", () => {
+    chamberAnchor.textContent = "";
+    homeAnchor.textContent = "Home";
+    finalAnchor.textContent = "Final";
+    gitHubAnchor.textContent = "GitHub Profile";
+    linkedInAnchor.textContent = "LinkedIn";
+    chamberAnchor.textContent = `📍 Chamber`;
+})
+
+finalAnchor.addEventListener("click", () => {
+    homeAnchor.textContent = "Home";
+    finalAnchor.textContent = "📍 Final";
+    gitHubAnchor.textContent = "GitHub Profile";
+    linkedInAnchor.textContent = "LinkedIn";
+    chamberAnchor.textContent = "Chamber";
+})
+
+gitHubAnchor.addEventListener("click", () => {
+    homeAnchor.textContent = "Home";
+    finalAnchor.textContent = "Final";
+    gitHubAnchor.textContent = "📍 GitHub Profile";
+    linkedInAnchor.textContent = "LinkedIn";
+    chamberAnchor.textContent = "Chamber";
+})
+
+linkedInAnchor.addEventListener("click", () => {
+    homeAnchor.textContent = "Home";
+    finalAnchor.textContent = "Final";
+    gitHubAnchor.textContent = "GitHub Profile";
+    linkedInAnchor.textContent = "📍 LinkedIn";
+    chamberAnchor.textContent = "Chamber";
 })
 
 const courses = [
