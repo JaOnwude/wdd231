@@ -5,6 +5,7 @@ const lineGrid = document.querySelector(".line-grid-btn");
 const table = document.querySelector("table");
 const cards = document.querySelector(".member-card");
 
+
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
