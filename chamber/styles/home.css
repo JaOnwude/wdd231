@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e5dfdf;
+    background-color: #ccc;
     padding: 10px;
     .logo-name-container {
         display: flex;
@@ -123,17 +123,21 @@ h1, .event-weather-section, .business-card-section {
 .event-weather-section div {
     min-height: 150px;
     margin: 5px 0;
-    background-color: #e5dfdf;
+    background-color: #ccc;
     h3 {
         text-align: center;
         background-color: #2b2929;
         color: whitesmoke;
         padding: 4px;
     }
+
+    p {
+        padding: 6px;
+    }
 }
 
 .business-card-section {
-    background-color: #e5dfdf;
+    background-color: #ccc;
     border-radius: 10px;
 }
 
@@ -167,8 +171,39 @@ h1, .event-weather-section, .business-card-section {
     }
 }
 
+.description {
+    text-transform: capitalize;
+}
+
+.weather-info-container {
+    display: flex;
+    flex-direction: column;
+    .current-temperature {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    h3 {
+        grid-column: 1/4;
+        margin-top: 0;
+    }
+
+    p {
+        line-height: 0;
+        /* margin-left: -10rem; */
+    }
+
+    .weather-info {
+        display: flex;
+        justify-content: left;
+        margin-left: 10px;
+        img {
+            margin-top: -47px;
+        }
+    }
+}
+
 footer {
-    background-color: #e5dfdf;
+    background-color: #ccc;
     padding: 8px;
     border-radius: 0 0 20px 20px;
     .socials-container {
@@ -243,14 +278,12 @@ footer {
 
     .event-weather-section {
         display: grid;
-        grid-template-columns: 1fr 200px 200px;
+        grid-template-columns: 1fr 280px 280px;
         grid-gap: 10px;
         div {
             position: relative;
             h3 {
-                position: absolute;
-                top: -18px;
-                width: 99%;
+                margin-top: -4px;
             }
         }
     }

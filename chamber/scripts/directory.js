@@ -1,4 +1,4 @@
-const url = "./data/members.json";
+const membersURL = "./data/members.json";
 let lineView = document.querySelector(".line-view-table");
 const photoGrid = document.querySelector(".photo-grid-btn");
 const lineGrid = document.querySelector(".line-grid-btn");
@@ -7,7 +7,7 @@ const cards = document.querySelector(".member-card");
 
 
 async function getMemberData() {
-    const response = await fetch(url);
+    const response = await fetch(membersURL);
     const data = await response.json();
     memberCard(data);
     gridLineDisplay(data)
