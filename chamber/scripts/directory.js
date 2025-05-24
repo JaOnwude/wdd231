@@ -5,6 +5,10 @@ const lineGrid = document.querySelector(".line-grid-btn");
 const table = document.querySelector("table");
 const cards = document.querySelector(".member-card");
 
+for (let i = 0; i < membersURL.length; i++) {
+    console.log(spotlightMembersURL[i].name)
+  }
+
 
 async function getMemberData() {
     const response = await fetch(membersURL);

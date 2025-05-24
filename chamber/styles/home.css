@@ -32,13 +32,14 @@ header {
     nav a {
         text-decoration: none;
         margin: 5px;
-        color: #f5f5f5;
+        color: #000;
         padding: 5px 10px;
     }
 
         nav a:hover {
             text-decoration: underline;
-            color: #ffebcd;
+            color: #f305b3;
+            transition: 400ms ease-in-out;
         }
 }
 
@@ -47,8 +48,8 @@ header {
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    background-color: #333;
-    color: #fff;
+    background-color: #eee;
+    color: #000;
 }
 
 #hamburger {
@@ -167,6 +168,7 @@ h1, .event-weather-section, .business-card-section {
         padding: 0;
         span:nth-Child(1) {
             font-weight: 600;
+            margin-right: 5px;
         }
     }
 }
@@ -199,6 +201,15 @@ h1, .event-weather-section, .business-card-section {
         img {
             margin-top: -47px;
         }
+    }
+}
+
+.forecast-info-container p {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    span {
+        font-weight: 700;
+        font-size: 1.3rem;
     }
 }
 

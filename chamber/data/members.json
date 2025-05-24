@@ -5,15 +5,19 @@
         "phone": "(234) 706-613-3703",
         "url": "https://zerotentechhub.com/",
         "image": "./images/temporary-logo.png",
-        "membershipLevel": "1 - member"
+        "membership": "Member",
+        "tag": "Business as Unusual",
+        "membershipLevel": 1
     },
     {
         "name": "RentHub 360",
         "address": "36 Chiboy Street, Democracy Estate, Abakaliki Ebonyi State",
-        "phone": "(234) 708-653-370993",
-        "url": "https://zerotentechhub.com/",
+        "phone": "(234) 708-653-3709",
+        "url": "https://renthub360.com/",
         "image": "./images/beauty-logo.jpeg",
-        "membershipLevel": "3 - Gold"
+        "membership": "Gold",
+        "tag": "Business as Unusual",
+        "membershipLevel": 3
     },
     {
         "name": "ZeroTen Hub",
@@ -21,15 +25,19 @@
         "phone": "(234) 706-613-3703",
         "url": "https://zerotentechhub.com/",
         "image": "./images/temporary-logo.png",
-        "membershipLevel": "2 - Silver"
+        "membership": "Member",
+        "tag": "Tech at its Peak",
+        "membershipLevel": 1
     },
     {
         "name": "Tech4Wealth Inc.",
         "address": "23 Udemezue Street, WatreWorks, Abakaliki Ebonyi State",
         "phone": "(234) 706-613-3703",
-        "url": "https://zerotentechhub.com/",
+        "url": "https://tech4wealth.com/",
         "image": "./images/advancedpage-logo.jpeg",
-        "membershipLevel": "3 - Gold"
+        "membership": "Gold",
+        "tag": "Tech for Prosperity",
+        "membershipLevel": 3
     },
     {
         "name": "3MTT Pro",
@@ -37,7 +45,9 @@
         "phone": "(234) 706-613-3703",
         "url": "https://zerotentechhub.com/",
         "image": "./images/simbri-logo.jpeg",
-        "membershipLevel": "1 - member"
+        "membership": "Member",
+        "tag": "Make Nigeria Great Again",
+        "membershipLevel": 1
     },
     {
         "name": "BigBrothers Electronics",
@@ -45,15 +55,18 @@
         "phone": "(234) 706-613-3703",
         "url": "https://zerotentechhub.com/",
         "image": "./images/astra-logo.png",
-        "membershipLevel": "1 - member"
+        "membership": "Member",
+        "membershipLevel": 1
     },
     {
         "name": "Achalugo Beauty Hub",
         "address": "23 Ahia Tomato, Mgbabo, Abakaliki Ebonyi State",
         "phone": "(234) 706-613-3703",
-        "url": "https://zerotentechhub.com/",
+        "url": "https://zerotentech.com/",
         "image": "./images/company-logo.png",
-        "membershipLevel": "2 - Silver"
+        "membership": "Silver",
+        "tag": "Make Nigeria Great Again",
+        "membershipLevel": 2
     },
     {
         "name": "Annex Building Materials",
@@ -61,6 +74,8 @@
         "phone": "(234) 706-613-3703",
         "url": "https://amasonannexbuildingmaterialslimited.com/ironrod",
         "image": "./images/business-logo.jpeg",
-        "membershipLevel": "1 - member"
+        "membership": "Member",
+        "tag": "Strength is our PRIDE",
+        "membershipLevel": 1
     }
 ]
