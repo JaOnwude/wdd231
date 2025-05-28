@@ -13,6 +13,7 @@ const linkedInAnchor = document.querySelector(".linkedin");
 let courseContainer = document.querySelector(".course-list-container");
 let displayTotalCredits = document.querySelector(".total-credits")
 let totalCredit = 0;
+const courseDetails = document.querySelector("#course-details");
 
 currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
@@ -165,11 +166,15 @@ function createCourseCard(courses) {
     displayTotalCredits.textContent = "";
     totalCredit = 0;
     courses.forEach(course => {
+        courseContainer.addEventListener('click', () => {
+            displayCourseDetails(course);
+          });
+          
         let list = document.createElement("li");
         list.textContent = `${course.subject} ${course.number}`;        
         totalCredit += course.credits;
         displayTotalCredits.innerHTML = `The total number of credits of the courses listed below is: <span class="credits-color">${totalCredit}</span>`;
-
+        
         if (course.completed == true) {
             list.style.backgroundColor = "#4e1805";
             list.style.color = "#f5f5f5"
@@ -180,3 +185,21 @@ function createCourseCard(courses) {
        courseContainer.appendChild(list);
     })
 }
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+    closeModal.addEventListener("click", () => {
+      courseDetails.close();
+    });
+  }

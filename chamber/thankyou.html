@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Giving information about available courses to our students is a top priority to us. This page gives a detailed information about our courses to our students">
+    <meta name="description"
+        content="Giving information about available courses to our students is a top priority to us. This page gives a detailed information about our courses to our students">
     <meta name="Author" content="Onwude James Uchenna">
     <meta property="og:title" content="WDD231">
-    <meta property="og:description" content="Discover the innovative world of chamber of commerce and place for sale or order to buy any product of yiur choice, plus explore entertainment and expert sales support">
+    <meta property="og:description"
+        content="Discover the innovative world of chamber of commerce and place for sale or order to buy any product of yiur choice, plus explore entertainment and expert sales support">
     <meta property="og:image" content="favicon.ico">
     <meta property="og:url" content="https://www.abakalikichamberofcomm.com.ng">
     <title>Abakaliki Chamber of Commerce - WDD231</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
 
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -39,48 +45,21 @@
             </nav>
             <img src="images/dark-theme.png" alt="dark theme" class="dark-theme" width="18" height="18">
             <a href="#" id="hamburger"></a>
-        </div>   
+        </div>
     </header>
     <main>
-        <div class="hero-section">
-            <img src="images/temple.jpg" alt="hero image" class="hero-image" width="500" height="200">
-            <button class="keynote-btn">Join Us Today</button>
-        </div>
-        <h1>Home</h1>
-        <section class="event-weather-section">
-            <div class="events-container">
-                <h3>Events</h3>
-            </div>
-            <div class="current-weather-container">
-                <div class="weather-info-container">
-                    <h3>Current Weather</h3>
-                    <div class="weather-info">
-                        <img id="weather-icon" src="" alt="">
-                        <div>
-                            <p class="current-temperature"></p>
-                            <p class="description"></p>
-                            <p class="max-temp"></p>
-                            <p class="min-temp"></p>
-                            <p class="humidity"></p>
-                            <p class="sunrise"></p>
-                            <p class="sunset"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="weather-forecast-container">
-                <div class="forecast-info-container">
-                    <h3>Weather Forecast</h3>
-                    <p class="today"></p>
-                    <p class="next-day"></p>
-                    <p class="next-two-days"></p>
-                </div>
-            </div>
-        </section>
-         <section class="business-card-container"></section>
+        <h1>Gratitude</h1>
+        <h2>Dear <span class="username"></span>, thank you for taking out time to fill out the Membership Form.</h2>
+        <h3>Your information include the following:</h3>
+        <p class="first-name"></p>
+        <p class="last-name"></p>
+        <p class="email"></p>
+        <p class="mobile-number"></p>
+        <p class="business-name"></p>
+        <p class="current-date"></p>
     </main>
     <footer>
-       <div class="chamber-address-container">
+        <div class="chamber-address-container">
             <h4>Abakaliki Chamber of Commerce</h4>
             <p>17 Chiboy Street</p>
             <p>Democracy Estate</p>
@@ -88,8 +67,8 @@
             <p>Ebonyi State, Nigeria</p>
             <p>infoAabakalikicc.org</p>
             <P>(+234) 874-400-88</P>
-       </div>
-       <div class="socials-container">
+        </div>
+        <div class="socials-container">
             <a href="https//www.youtube.com/">
                 <img src="images/youtube-icon.png" alt="YouTube logo" width="60" height="60">
             </a>
@@ -99,13 +78,13 @@
             <a href="https://www.linkedin.com/">
                 <img src="images/linkedin-icon.png" alt="LinkedIn logo" width="60" height="60">
             </a>
-       </div>
-       <div class="last-mod-container">
+        </div>
+        <div class="last-mod-container">
             <p>WDD231 Class Project</p>
             <p>Onwude James Uchenna</p>
             <p>&copy;<span id="currentyear"></span> Abakaliki Chamber of Commerce</p>
             <p id="lastModified" class="yellow modified"></p>
-       </div>
+        </div>
     </footer>
 </body>
 
