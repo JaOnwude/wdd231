@@ -165,11 +165,7 @@ function createCourseCard(courses) {
     courseContainer.innerHTML = "";
     displayTotalCredits.textContent = "";
     totalCredit = 0;
-    courses.forEach(course => {
-        courseContainer.addEventListener('click', () => {
-            displayCourseDetails(course);
-          });
-          
+    courses.forEach(course => {    
         let list = document.createElement("li");
         list.textContent = `${course.subject} ${course.number}`;        
         totalCredit += course.credits;
@@ -182,6 +178,11 @@ function createCourseCard(courses) {
             list.style.backgroundColor = " #ccc";
             list.style.color = "#000"
         }
+
+        list.addEventListener('click', () => {
+            displayCourseDetails(course);
+          });
+          
        courseContainer.appendChild(list);
     })
 }
