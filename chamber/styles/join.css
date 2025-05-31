@@ -17,6 +17,7 @@
 form {
     display: grid;
     gap: 0.5em;
+    padding-left: 1rem;
 }
 
 input, textarea {
