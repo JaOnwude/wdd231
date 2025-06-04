@@ -1,0 +1,57 @@
+[ 
+    {
+        "title": "Emene Industrial Park",
+        "image": "../images/temple.jpg",
+        "address": "Emene, Abakaliki",
+        "description": "A hub for industrial activities in Ebonyi State"
+    },
+    {
+        "title": "Abakaliki Main Market",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A bustling marketplace for local goods"
+    },
+    {
+        "title": "Ebonyi State University",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A premier institution of higher learning"
+    },
+    {
+        "title": "Presidential Hotel",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A luxury hotel with modern amenities"
+    },
+    {
+        "title": "Abakaliki Stadium",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A venue for sports and entertainment events"
+    },
+    {
+        "title": "Ebonyi State Government House",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "The seat of government for Ebonyi State"
+    },
+    {
+        "title": "Abakaliki Crafts Market",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A marketplace for local crafts and artisans"
+    },
+    {
+        "title": "Ebonyi State Library",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A repository of knowledge and information"
+    },
+    {
+        "title": "Centinary City Boulevard",
+        "image": "../images/temple.jpg",
+        "address": "Abakaliki",
+        "description": "A premier estate for luxury"
+    }
+
+]
