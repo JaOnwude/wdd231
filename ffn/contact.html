@@ -12,7 +12,7 @@
         content="Discover the innovative world of chamber of commerce and place for sale or order to buy any product of yiur choice, plus explore entertainment and expert sales support">
     <meta property="og:image" content="favicon.ico">
     <meta property="og:url" content="https://www.abakalikichamberofcomm.com.ng">
-    <title>Farm Fresh Naija - WDD231</title>
+    <title>Meet Our Farmers - WDD231</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/contact.css">
 
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/farmers.js" defer></script>
 </head>
 
 <body>
@@ -41,47 +42,49 @@
                 <a href="index.html" title="Home" class="home">Home</a>
                 <a href="farmers.html" title="Farmers" class="discover">Farmers</a>
                 <a href="join.html" title="Join Us" class="directory">Join Us</a>
-                <a href="contact.html" title="Contact Us" class="join">Contact Us</a>
+                <a href="contact.html" title="contact Us" class="join">Contact Us</a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="hero-section">
-            <img src="images/topography.jpeg" alt="hero image" class="hero-image" width="500" height="300">
-            <a class="keynote-btn" href="farmers.html">Buy From Our Farmers Today</a>
-        </div>
-        <h1 class="home">Home</h1>
-        <section class="event-weather-section">
-            <div class="events-container">
-                <h3>Events</h3>
-            </div>
-            <div class="current-weather-container">
-                <div class="weather-info-container">
-                    <h3>Current Weather</h3>
-                    <div class="weather-info">
-                        <img id="weather-icon" src="" alt="">
+        <h1>Contact Us</h1>
+        <section>
+            <h2>Let's hear from you</h2>
+            <div class="user-section">
+                <form action="thankyoucontact.html" method="get">
+                    <fieldset>
+                        <legend>Contact Information</legend>
                         <div>
-                            <p class="current-temperature"></p>
-                            <p class="description"></p>
-                            <p class="max-temp"></p>
-                            <p class="min-temp"></p>
-                            <p class="humidity"></p>
-                            <p class="sunrise"></p>
-                            <p class="sunset"></p>
+                            <label>Name*: <input type="text" name="username" id="username" required></label>                            
                         </div>
+                        <label>Email*: <input type="email" name="email" id="email" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Purpose of contacting us</legend>
+                        <div class="flex">                            
+                            <label><input type="radio" name="purpose" id="general-enquiry"> General Enquiry</label>
+                        </div>
+                        <div class="flex">                            
+                            <label><input type="radio" name="purpose" id="reservation"> Farm Produce Question</label>
+                        </div>
+                        <div class="flex">                            
+                            <label><input type="radio" name="purpose" id="suggestion"> Website Suggestion</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="message">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Type message here..."></textarea>
+                    </fieldset>
+                    <fieldset class="subscribe-field flex">
+                        
+                        <label for="subscrbe"><input type="checkbox" name="subscrbe" id="subscrbe"> Please subscribe me to the monthly newsletter</label>
+                    </fieldset>
+                    <div class="submit-btn-container">
+                        <button type="submit">Send My Message</button>
                     </div>
-                </div>
-            </div>
-            <div class="weather-forecast-container">
-                <div class="forecast-info-container">
-                    <h3>Weather Forecast</h3>
-                    <p class="today"></p>
-                    <p class="next-day"></p>
-                    <p class="next-two-days"></p>
-                </div>
-            </div>
+                </form>
+            </div>        
         </section>
-        <section class="business-card-container"></section>
     </main>
     <footer>
         <div class="chamber-address-container">
