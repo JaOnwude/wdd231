@@ -65,15 +65,15 @@
             </label>
             <label>
                 Email:
-                <input type="email" name="email" title="Email" autocomplete="email" placeholder="nobody23@gmail.com" required>
+                <input type="email" name="email" title="Email" autocomplete="email" placeholder="somebody23@gmail.com" required>
             </label>
             <label>
                 Mobile Phone Number:
                 <input type="tel" name="mobilePhoneNumber" title="Mobile Phone Number" autocomplete="tel" required>
             </label>
             <label>
-                Organization:
-                <input type="text" name="organizationName" title="Business/Organization Name" autocomplete="organization"
+                Produce Specialization:
+                <input type="text" name="produce" title="Names of farm produce" autocomplete="produce" placeholder="Yam,beans, rice..."
                     required>
             </label><label>
                 Business Description:
@@ -82,7 +82,7 @@
             </label>
             <fieldset>
                 <legend>Membership Level</legend>
-                <label><input type="radio" name="non-profit" id="nonProfit">Non Profit Membership</label>
+                <label><input type="radio" name="non-profit" id="nonProfit">Free Basic Membership</label>
                 <label><input type="radio" name="non-profit" id="bronze">Bronze Membership</label>
                 <label><input type="radio" name="non-profit" id="silver">Silver Membership</label>
                 <label><input type="radio" name="non-profit" id="gold">Gold Membership</label>
@@ -94,7 +94,7 @@
         <section class="membership-cards">
             <h2>Membership Levels</h2>
             <div class="card">
-                <h2>Non Profit Membership Level</h2>
+                <h2>Free Basic Membership Level</h2>
                 <a href="#" class="learn-more np-learn-more" data-modal="np-modal">Learn More</a>
             </div>
             <div class="card">
@@ -112,49 +112,54 @@
         </section>
         <!-- Modals -->
         <dialog id="np-modal">
-            <h2>NP Membership Benefits</h2>
+            <h2>Basic Membership Benefits</h2>
+            <h5>Price: $0</h5>
             <ul>
-                <li>Special events that caters for the needs of your customers</li>
-                <li>Training</li>
-                <li>Event discounts</li>
+                <li>Free access to basic farm management tools</li>
+                <li>Limited access to expert advice</li>
+                <li>Basic market information</li>
+                <li>Community forum access</li>
+                <li>Regular newsletter</li>
             </ul>
             <button class="close-modal np-modal">❌</button>
         </dialog>
         <dialog id="bronze-modal">
             <h2>Bronze Membership Benefits</h2>
+            <h5>Price: $4.22</h5>
             <ul>
-                <li>Special events that caters for the needs of your customers</li>
-                <li>Training</li>
-                <li>Event discounts</li>
-                <li>Advertising</li>
+                <li>Advanced farm management tools</li>
+                <li>Priority access to expert advice</li>
+                <li>Market analysis and insights</li>
+                <li>Access to webinars and workshops</li>
+                <li>Discounts on farm inputs</li>                
             </ul>
             <button class="close-modal bronze-modal">❌</button>
         </dialog>
         <dialog id="silver-modal">
             <h2>Silver Membership Benefits</h2>
+            <h5>Price: $10.52</h5>
             <ul>
-                <li>Special events that caters for the needs of your customers</li>
-                <li>Training</li>
-                <li>Event discounts</li>
-                <li>Advertising</li>
-                <li>Spotlight positions on the home page</li>
+                <li>Personalized farm planning</li>
+                <li>Advanced market access</li>
+                <li>Business mentorship</li>
+                <li>Access to premium resources</li>
+                <li>Networking opportunities</li>
             </ul>
             <button class="close-modal silver-modal">❌</button>
         </dialog>
         <dialog id="gold-modal">
             <h2>Gold Membership Benefits</h2>
+            <h5>Price: $20.99</h5>
             <ul>
-                <li>Special events that caters for the needs of your customers</li>
-                <li>Training</li>
-                <li>Event discounts</li>
-                <li>Advertising</li>
+                <li>Comprehensive farm management services</li>
+                <li>Dedicated account manager</li>
+                <li>Unlimited access to expert advice</li>
+                <li>Exclusive access to new technologies</li>
                 <li>Spotlight positions on the home page</li>
-                <li>FREE flight ticket to the Bahamas once a year</li>
+                <li>VIP event invitations</li>
             </ul>
             <button class="close-modal gold-modal">❌</button>
-        </dialog>
-        </main>
-        
+        </dialog>        
     </main>
     <footer>
         <div class="chamber-address-container">

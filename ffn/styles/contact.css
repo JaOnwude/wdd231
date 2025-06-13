@@ -111,3 +111,13 @@ iframe {
 footer {
     margin-top: 1rem;
 }
+
+input[required] {
+    border-left: 4px solid red;
+}
+
+.hear {
+    text-align: center;
+    margin-top: 2rem;
+    color: navy;
+}

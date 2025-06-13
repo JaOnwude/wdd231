@@ -115,11 +115,16 @@ dialog {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #ffefd5;
     padding: 5px 10px 5px 5px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    h5 {
+        text-align: center;
+        color: navy;
+        margin: 0;
+    }
 }
 
 input[required] {
