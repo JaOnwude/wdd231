@@ -1,20 +1,20 @@
 const membersURL = "./data/farmers.json";
-let lineView = document.querySelector(".line-view-table");
-const photoGrid = document.querySelector(".photo-grid-btn");
-const lineGrid = document.querySelector(".line-grid-btn");
-const table = document.querySelector("table");
 const cards = document.querySelector(".member-card");
 
-// for (let i = 0; i < membersURL.length; i++) {
-//     console.log(spotlightMembersURL[i].name)
-//   }
-
-
 async function getMemberData() {
-    const response = await fetch(membersURL);
-    const data = await response.json();
-    memberCard(data);
-    gridLineDisplay(data)
+    try {
+        const response = await fetch(membersURL);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        memberCard(data);
+    } catch (error) {
+        console.error('Error fetching member data:', error);
+        cards.innerHTML = '<p>Oops, there was an ERROR loading member data...</p>';
+    }
 }
 
 getMemberData();
@@ -27,14 +27,14 @@ function memberCard(members) {
         const memberPhone = document.createElement("p");
         const memberWebsite = document.createElement("p");
         const shadedBorder = document.createElement("div");
-
+        
         memberdetails.setAttribute("class", "member-details");
         memberLogo.setAttribute("src", member.image);
         memberLogo.setAttribute("alt", "farmer's image");
         memberLogo.setAttribute("width", "60");
         memberLogo.setAttribute("height", "60");
         shadedBorder.setAttribute("class", "shaded-border")
-
+        
         memberAddress.textContent = member.address;
         memberPhone.textContent = member.phone;
         memberWebsite.innerHTML = `<a href="#">${member.email}</a>`;
@@ -44,7 +44,7 @@ function memberCard(members) {
         memberdetails.appendChild(memberPhone);
         memberdetails.appendChild(memberWebsite);
         memberdetails.appendChild(shadedBorder);
-
+        
         cards.appendChild(memberdetails);
     })
 }
